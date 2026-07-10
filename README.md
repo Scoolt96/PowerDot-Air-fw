@@ -151,6 +151,7 @@ Alternativ lässt sich in der Web-UI eine `.bin` auch **manuell per Drag & Drop*
 
 | Version | Stand | Highlights |
 |---|---|---|
+| **v1.0.1-beta** | 10.07.2026 | Temperatur-Offset (Kalibrierung gegen Eigenerwärmung, Gerät + Web-UI); überarbeitete Netzwerk-/Hotspot-Seite (Netzwerk-IP dauerhaft sichtbar, Countdown-Zeitleiste, Hotspot „PowerDot Air“); mehrfarbiger & flüssiger Splash; weicher, kontinuierlicher Übersichts-Graph |
 | **v1.0.0-beta** | Erst-Release | Luftqualität (SEN66), rundes UI mit Verlaufsgraphen, Web-UI + Langzeit-Logger, Home-Assistant-Anbindung (MQTT-Discovery), OTA-Update |
 
 > Status: **Beta** – aktive Weiterentwicklung.
