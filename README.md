@@ -63,6 +63,7 @@ Alle Werte stammen aus **einem** Sensor (Sensirion SEN66) im Dauerbetrieb, 1 × 
 - 🏠 **Home-Assistant-Anbindung** per MQTT-Discovery – Sensoren *und* steuerbare Einstellungen.
 - 🔄 **Online-Update (OTA)** über WLAN, direkt aus diesem Repo.
 - 🔊 **Akustische Rückmeldung** (abschaltbar / Lautstärke einstellbar).
+- 🔔 **Alarme / Sicherheitszonen** – pro Messwert eine Zone festlegen; verlässt der Wert die Zone, ertönt ein Signal (Ton & Wiederhol-Intervall wählbar).
 - ⚙️ **Anpassbar** – Helligkeit, Display-Timeout, Seiten-Wechselzeit, aktive Seiten u. v. m.
 
 ---
@@ -92,9 +93,10 @@ Erreichbar über den Geräte-Hotspot oder – nach WLAN-Einrichtung – über di
 
 | Bereich | Funktion |
 |---|---|
-| **Dashboard** | Gesamtstatus + alle Luftwerte live, farbcodiert, inkl. System-Infos |
-| **Verlauf** | Langzeit-Diagramme mit Min/Max und Hover-Wertanzeige |
-| **Einstellungen** | Display, Audio, aktive Seiten |
+| **Dashboard (Live)** | Gesamtstatus + alle Luftwerte live, farbcodiert, inkl. System-Infos |
+| **Desktop** | Detail-Graphen mit Min/Max, Hover-Werten und frei wählbarem Zeitraum (Von/Bis + Presets) |
+| **Alarme** | Pro Messwert eine Sicherheitszone; akustisches Signal bei Verlassen, mit Wiederhol-Intervall & Tonauswahl |
+| **Einstellungen** | Display, Audio, Temperatur-Offset, aktive Seiten |
 | **Setup** | WLAN-Einrichtung (Assistent) |
 | **Home Assistant** | MQTT-Broker konfigurieren |
 | **Firmware** | Online-Update (OTA) oder `.bin` per Drag & Drop |
@@ -151,6 +153,7 @@ Alternativ lässt sich in der Web-UI eine `.bin` auch **manuell per Drag & Drop*
 
 | Version | Stand | Highlights |
 |---|---|---|
+| **v1.1.0-beta** | 13.07.2026 | **Alarme & Sicherheitszonen** – pro Messwert eine Zone mit akustischem Signal, Wiederhol-Intervall & Tonauswahl; **Desktop-Ansicht** mit Detail-Graphen und frei wählbarem Zeitraum (Von/Bis); Web-UI überschreibt Eingaben beim Bearbeiten nicht mehr; Live-Helligkeit beim Ziehen; diverse Touch-/Slider-Verbesserungen |
 | **v1.0.1-beta** | 10.07.2026 | Temperatur-Offset (Kalibrierung gegen Eigenerwärmung, Gerät + Web-UI); überarbeitete Netzwerk-/Hotspot-Seite (Netzwerk-IP dauerhaft sichtbar, Countdown-Zeitleiste, Hotspot „PowerDot Air“); mehrfarbiger & flüssiger Splash; weicher, kontinuierlicher Übersichts-Graph |
 | **v1.0.0-beta** | Erst-Release | Luftqualität (SEN66), rundes UI mit Verlaufsgraphen, Web-UI + Langzeit-Logger, Home-Assistant-Anbindung (MQTT-Discovery), OTA-Update |
 
