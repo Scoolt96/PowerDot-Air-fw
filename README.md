@@ -1,5 +1,7 @@
 # PowerDot Air
 
+<p align="center"><img src="images/powerdot-air.jpg" alt="PowerDot Air" width="640"></p>
+
 **Luftqualitäts-Monitor mit rundem Touch-Display.**
 PowerDot Air misst kontinuierlich CO₂, Feinstaub, Gase (VOC/NOx), Temperatur und
 Luftfeuchte mit einem **Sensirion SEN66** und zeigt alles auf einem 1,46″-Rund­display,
@@ -110,6 +112,8 @@ Alle Werte stammen aus **einem** Sensor (Sensirion SEN66) im Dauerbetrieb, 1 × 
 Gewischt wird **links/rechts** durch die Hauptseiten (kreisförmig) und **nach oben** in die
 Einstellungen.
 
+![Die 5 Hauptseiten](images/hauptseiten.png)
+
 | Seite | Inhalt |
 |---|---|
 | **Übersicht** | Gesamt-Luftqualität als vollflächiger Verlaufsgraph hinter der Uhrzeit, plus Gesamtstatus & Datum |
@@ -148,6 +152,8 @@ PowerDot Air spricht **MQTT-Discovery**: mit konfiguriertem MQTT-Broker (z. B. M
 erscheint das Gerät automatisch unter *Einstellungen → Geräte & Dienste → MQTT* – ohne
 manuelles YAML.
 
+<p align="center"><img src="images/home-assistant.png" alt="PowerDot Air als Gerät in Home Assistant" width="440"></p>
+
 - **Sensoren:** CO₂, PM1.0 / PM2.5 / PM4 / PM10, Temperatur, Luftfeuchte, VOC-Index,
   NOx-Index, WLAN-Signal (RSSI).
 - **Steuerbar aus Home Assistant:** Display-Helligkeit, Lautstärke, Seiten-Wechselzeit,
@@ -175,6 +181,10 @@ Alternativ lässt sich in der Web-UI eine `.bin` auch **manuell per Drag & Drop*
 ---
 
 ## Hardware
+
+<p align="center"><img src="images/aufbau.png" alt="Aufbau – gedrucktes Gehäuse + Elektronik" width="680"></p>
+
+Sauber gefügtes Gehäuse aus wenigen Teilen (geschraubt, kein Kleben) – STLs auf MakerWorld, Elektronik von der Stange.
 
 | Komponente | Detail |
 |---|---|
