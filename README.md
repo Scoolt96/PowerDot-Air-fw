@@ -13,6 +13,43 @@ in einer eingebauten **Web-Oberfläche** und direkt in **Home Assistant** an.
 
 ---
 
+## Versionen / Changelog
+
+### v1.2.0-beta — 14.07.2026
+**Neu**
+- **Boot-Sound** beim Einschalten (aufsteigende Melodie).
+- **Nacht-/Ruhezeiten** – im einstellbaren Zeitfenster (Von/Bis) werden die Alarme stummgeschaltet (Web-UI).
+- **Lüften-Hinweis** – pulsierendes Badge auf der Geräte-Übersicht + Banner im Web-Dashboard, sobald CO₂ hoch ist.
+- **Alarm-Ursache auf der Übersicht** – rotes Badge zeigt, welcher Messwert den Alarm auslöst.
+- **Trend-Pfeile** ↑↓→ auf jeder Kachel im Web-Dashboard (steigt / fällt / stabil).
+- **Auto-Drehung standardmäßig aktiv** (Lagesensor).
+
+**Geändert / Verbessert**
+- „Desktop"-Ansicht heißt jetzt **„Erweiterte Ansicht"**: Wert **über der Linie** beim Überfahren, **synchroner Cursor** über alle Graphen, plus **Verlauf-Zeitraum**-Schnellwahl (1 Std … Gesamt).
+- Web-UI durchgehend mit **deutschen Umlauten**.
+- Einstellungen werden beim Bearbeiten **nicht mehr automatisch überschrieben** (erst beim Speichern synchronisiert).
+- **Alarm testen** nutzt die eingestellte Lautstärke; **Speichern** bleibt auf der Alarm-Seite.
+- Uhrzeit stellen: **+/- mit Gedrückt-Halten** (Dauerlauf) + größere Buttons.
+- **Live-Helligkeit** beim Ziehen, **Splash** ~3 s länger, **Slider** ohne Springen/Haken, Übersichts-Graph sauberer.
+
+### v1.1.0-beta — 13.07.2026
+- **Alarme & Sicherheitszonen** – pro Messwert eine Zone mit akustischem Signal, Wiederhol-Intervall & Tonauswahl.
+- **Desktop-Ansicht** mit Detail-Graphen und frei wählbarem Zeitraum (Von/Bis).
+- Web-UI überschreibt Eingaben beim Bearbeiten nicht mehr; Live-Helligkeit beim Ziehen; diverse Touch-/Slider-Verbesserungen.
+
+### v1.0.1-beta — 10.07.2026
+- **Temperatur-Offset** (Kalibrierung gegen Eigenerwärmung, Gerät + Web-UI).
+- **Netzwerk-/Hotspot-Seite überarbeitet** (Netzwerk-IP dauerhaft sichtbar, Countdown-Zeitleiste, Hotspot „PowerDot Air").
+- Mehrfarbiger & flüssiger Splash; weicher, kontinuierlicher Übersichts-Graph.
+
+### v1.0.0-beta — Erst-Release
+- Luftqualität (SEN66), rundes UI mit Verlaufsgraphen.
+- Web-UI + Langzeit-Logger, Home-Assistant-Anbindung (MQTT-Discovery), OTA-Update.
+
+> Status: **Beta** – aktive Weiterentwicklung.
+
+---
+
 ## Projektbeschreibung
 
 PowerDot Air ist ein kompaktes, eigenständiges Wandgerät für die **Raumluft­qualität**.
@@ -94,9 +131,9 @@ Erreichbar über den Geräte-Hotspot oder – nach WLAN-Einrichtung – über di
 | Bereich | Funktion |
 |---|---|
 | **Dashboard (Live)** | Gesamtstatus + alle Luftwerte live, farbcodiert, inkl. System-Infos |
-| **Desktop** | Detail-Graphen mit Min/Max, Hover-Werten und frei wählbarem Zeitraum (Von/Bis + Presets) |
+| **Erweiterte Ansicht** | Detail-Graphen; beim Überfahren Wert über der Linie + synchroner Cursor über alle Graphen; frei wählbarer Zeitraum (Von/Bis + Verlauf-Schnellwahl) |
 | **Alarme** | Pro Messwert eine Sicherheitszone; akustisches Signal bei Verlassen, mit Wiederhol-Intervall & Tonauswahl |
-| **Einstellungen** | Display, Audio, Temperatur-Offset, aktive Seiten |
+| **Einstellungen** | Display, Audio, Temperatur-Offset, Nachtmodus (Alarm-Ruhezeiten), aktive Seiten |
 | **Setup** | WLAN-Einrichtung (Assistent) |
 | **Home Assistant** | MQTT-Broker konfigurieren |
 | **Firmware** | Online-Update (OTA) oder `.bin` per Drag & Drop |
@@ -146,18 +183,6 @@ Alternativ lässt sich in der Web-UI eine `.bin` auch **manuell per Drag & Drop*
 | Sensor | **Sensirion SEN66** (CO₂, PM, VOC, NOx, Temp, Feuchte) |
 | Audio | PCM5101A, I²S |
 | Konnektivität | WLAN 2,4 GHz (Access-Point + Client), MQTT |
-
----
-
-## Versionen
-
-| Version | Stand | Highlights |
-|---|---|---|
-| **v1.1.0-beta** | 13.07.2026 | **Alarme & Sicherheitszonen** – pro Messwert eine Zone mit akustischem Signal, Wiederhol-Intervall & Tonauswahl; **Desktop-Ansicht** mit Detail-Graphen und frei wählbarem Zeitraum (Von/Bis); Web-UI überschreibt Eingaben beim Bearbeiten nicht mehr; Live-Helligkeit beim Ziehen; diverse Touch-/Slider-Verbesserungen |
-| **v1.0.1-beta** | 10.07.2026 | Temperatur-Offset (Kalibrierung gegen Eigenerwärmung, Gerät + Web-UI); überarbeitete Netzwerk-/Hotspot-Seite (Netzwerk-IP dauerhaft sichtbar, Countdown-Zeitleiste, Hotspot „PowerDot Air“); mehrfarbiger & flüssiger Splash; weicher, kontinuierlicher Übersichts-Graph |
-| **v1.0.0-beta** | Erst-Release | Luftqualität (SEN66), rundes UI mit Verlaufsgraphen, Web-UI + Langzeit-Logger, Home-Assistant-Anbindung (MQTT-Discovery), OTA-Update |
-
-> Status: **Beta** – aktive Weiterentwicklung.
 
 ---
 
