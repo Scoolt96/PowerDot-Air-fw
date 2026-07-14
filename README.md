@@ -17,6 +17,16 @@ in einer eingebauten **Web-Oberfläche** und direkt in **Home Assistant** an.
 
 ## Versionen / Changelog
 
+### v1.2.1-beta — 14.07.2026
+**Neu**
+- **Alarm-Profile** – 5 Speicherplätze auf der Alarm-Seite: komplette Alarm-Konfiguration (Zonen, Grenzen, Ton, Lautstärke, Intervall) als benanntes Profil sichern und mit einem Tipp wieder laden.
+- **„Auf Standard zurücksetzen"** auf der Alarm-Seite – setzt alle Grenzwerte + Ton/Lautstärke/Intervall auf die Vorgaben zurück (An/Aus & „Alarm scharf" bleiben erhalten).
+
+**Geändert / Verbessert**
+- **CO₂-Alarm startet bei 0** – kein Fehlalarm mehr bei Frischluft unter 400 ppm; ein bereits gespeicherter Tiefwert von 400 wird automatisch bereinigt.
+- **Animierte Umschaltung** zwischen „Live" und „Erweiterte Ansicht" im Web-Dashboard (sanftes Einblenden, auf Chrome/Edge zusätzlich weicher Cross-Fade).
+- **Übersichts-Graph** dezenter: Trendlinie mit 40 % Deckkraft, eckig ohne die dunklen Punkte an den Datenpunkten.
+
 ### v1.2.0-beta — 14.07.2026
 **Neu**
 - **Boot-Sound** beim Einschalten (aufsteigende Melodie).
