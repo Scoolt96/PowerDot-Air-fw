@@ -17,6 +17,19 @@ in einer eingebauten **Web-Oberfläche** und direkt in **Home Assistant** an.
 
 ## Versionen / Changelog
 
+### v1.2.2-beta — 17.07.2026
+**Neu**
+- **Eigene Modi** – bis zu 5 zeitgesteuerte Modi (Uhrzeit + Wochentage) in der Web-UI unter dem Nachtmodus: je Modus optional **Alarme stumm**, **Helligkeit**, **Display-Timeout**, **Autoscroll** *oder* eine **feste Seite**. Der Nachtmodus hat Vorrang, danach gilt der oberste passende Modus; außerhalb aller Modi gelten wieder die normalen Einstellungen.
+- **Deckkraft der Graphen** am Gerät einstellbar (Web → Diagramme), 0–100 %, wirkt live auf alle Graphen.
+- **Luftqualitäts-Verlauf im Web-Dashboard** – derselbe Gesamt-Score-Graph wie am Gerät, hinter dem Status, gefärbt nach aktueller Bewertung.
+- **Nachtmodus** schaltet das Display zusätzlich nach 30 s ab; danach gilt automatisch wieder der eingestellte Timeout.
+
+**Geändert / Verbessert**
+- **Animierte Umschaltung** zwischen „Live" und „Erweiterte Ansicht" – die Kacheln federn gestaffelt in ihre Position.
+- Hero-Kachel: „Luftqualität" steht jetzt über dem Status; Label und Buttons bleiben über dem Graphen lesbar.
+- **Fix:** Der Hover-Wert (Tooltip) saß in beiden Ansichten versetzt.
+- **Intern:** Nachtmodus und Modi bestimmen ihren Zustand nur noch 1×/s statt bei jedem Loop-Durchlauf.
+
 ### v1.2.1-beta — 14.07.2026
 **Neu**
 - **Alarm-Profile** – 5 Speicherplätze auf der Alarm-Seite: komplette Alarm-Konfiguration (Zonen, Grenzen, Ton, Lautstärke, Intervall) als benanntes Profil sichern und mit einem Tipp wieder laden.
