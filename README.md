@@ -17,6 +17,15 @@ in einer eingebauten **Web-Oberfläche** und direkt in **Home Assistant** an.
 
 ## Versionen / Changelog
 
+### v1.2.3-beta — 18.07.2026
+**Neu**
+- **Hauptseiten umsortieren** – in der Web-UI unter Einstellungen → „Aktive Seiten" die Reihenfolge der Hauptseiten per **Drag & Drop** ändern (am Griff ☰ ziehen; Maus & Touch). Wirkt sofort am Gerät: Wischen, Auto-Wechsel und die Navigations-Punkte folgen der neuen Reihenfolge.
+
+**Geändert / Verbessert**
+- **Einheitliche Web-UI-Animation** – beim Öffnen jeder Seite (auch beim Tab-Wechsel) blendet sich der Inhalt sanft ein und die Karten gleiten dezent von unten herein.
+- **Alle Emojis aus der Web-UI entfernt** – ruhigeres, klareres Bild (Text + farbige Punkte statt bunter Symbole).
+- **Fix:** Der Seiten-Indikator am Gerät sprang nach Änderungen in der Web-UI (Reihenfolge oder Seiten an/aus) und stimmte erst nach einem Wisch wieder – jetzt sofort korrekt.
+
 ### v1.2.2-beta — 17.07.2026
 **Neu**
 - **Eigene Modi** – bis zu 5 zeitgesteuerte Modi (Uhrzeit + Wochentage) in der Web-UI unter dem Nachtmodus: je Modus optional **Alarme stumm**, **Helligkeit**, **Display-Timeout**, **Autoscroll** *oder* eine **feste Seite**. Der Nachtmodus hat Vorrang, danach gilt der oberste passende Modus; außerhalb aller Modi gelten wieder die normalen Einstellungen.
