@@ -17,6 +17,14 @@ in einer eingebauten **Web-Oberfläche** und direkt in **Home Assistant** an.
 
 ## Versionen / Changelog
 
+### v1.7.0-beta — 24.07.2026
+**Neu**
+- **Dot-Verbund** – mehrere Dots (PowerDot Air + PowerDot) in einem Dashboard: Netzwerk-Suche (mDNS), Live-Werte, Verlaufsgraphen je Dot, Werte ein-/ausblenden und „Alle Einstellungen übernehmen" bei gleichem Modell. Als dritte Kachel direkt auf der Startseite.
+
+**Geändert / Verbessert**
+- **Home Assistant:** benannte Sensoren und korrekte Nachkommastellen.
+- **Unter der Haube:** auf das gemeinsame **PowerDotCore**-Fundament v0.20.0 migriert (geteilte Web-Shell, Einstellungen, Zeit, Modi, Home Assistant) – Basis für den Dot-Verbund und synchrone Updates beider Produkte.
+
 ### v1.2.3-beta — 18.07.2026
 **Neu**
 - **Hauptseiten umsortieren** – in der Web-UI unter Einstellungen → „Aktive Seiten" die Reihenfolge der Hauptseiten per **Drag & Drop** ändern (am Griff ☰ ziehen; Maus & Touch). Wirkt sofort am Gerät: Wischen, Auto-Wechsel und die Navigations-Punkte folgen der neuen Reihenfolge.
