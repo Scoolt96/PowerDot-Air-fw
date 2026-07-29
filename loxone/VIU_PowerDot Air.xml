@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VirtualInUdp HintText="PowerDot Air - Luftqualitaet per UDP. Port 7000; Absenderadresse = IP des Dots (optional)." Title="PowerDot Air" Comment="PowerDot Air - Luftqualitaet (SEN66)" Address="" Port="7000">
+	<Info templateType="1" minVersion="17010727"/>
+	<VirtualInUdpCmd Title="CO2" Comment="" Address="" Check="&quot;co2&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.0&gt; ppm" HintText=""/>
+	<VirtualInUdpCmd Title="Temperatur" Comment="" Address="" Check="&quot;temp&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.1&gt;°C" HintText=""/>
+	<VirtualInUdpCmd Title="Luftfeuchte" Comment="" Address="" Check="&quot;rh&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.0&gt; %" HintText=""/>
+	<VirtualInUdpCmd Title="PM1.0" Comment="" Address="" Check="&quot;pm1&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.1&gt; µg/m³" HintText=""/>
+	<VirtualInUdpCmd Title="PM2.5" Comment="" Address="" Check="&quot;pm2p5&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.1&gt; µg/m³" HintText=""/>
+	<VirtualInUdpCmd Title="PM4.0" Comment="" Address="" Check="&quot;pm4&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.1&gt; µg/m³" HintText=""/>
+	<VirtualInUdpCmd Title="PM10" Comment="" Address="" Check="&quot;pm10&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.1&gt; µg/m³" HintText=""/>
+	<VirtualInUdpCmd Title="VOC Index" Comment="" Address="" Check="&quot;voc&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.0&gt;" HintText=""/>
+	<VirtualInUdpCmd Title="NOx Index" Comment="" Address="" Check="&quot;nox&quot;:\v" Signed="true" Analog="true" SourceValLow="0" DestValLow="0" SourceValHigh="100" DestValHigh="100" DefVal="0" MinVal="-10000" MaxVal="10000" Unit="&lt;v.0&gt;" HintText=""/>
+</VirtualInUdp>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VirtualOut HintText="PowerDot Air - Display/Audio steuern (HTTP). Adresse = http://<Dot-IP> (hier voreingestellt auf 192.168.68.150; pro Installation anpassen)." Title="PowerDot Air Steuerung" Comment="PowerDot Air - Steuerung Display/Audio" Address="http://192.168.68.150" CmdInit="" CloseAfterSend="true" CmdSep=";">
+	<Info templateType="3" minVersion="17010727"/>
+	<VirtualOutCmd Title="Helligkeit" Comment="10..100 %" CmdOnMethod="GET" CmdOffMethod="GET" CmdOn="/setbright?v=&lt;v&gt;" CmdOnHTTP="" CmdOnPost="" CmdOff="" CmdOffHTTP="" CmdOffPost="" CmdAnswer="" Analog="true" Repeat="0" RepeatRate="0" HintText=""/>
+	<VirtualOutCmd Title="Lautstaerke" Comment="0..100 %" CmdOnMethod="GET" CmdOffMethod="GET" CmdOn="/setvol?v=&lt;v&gt;" CmdOnHTTP="" CmdOnPost="" CmdOff="" CmdOffHTTP="" CmdOffPost="" CmdAnswer="" Analog="true" Repeat="0" RepeatRate="0" HintText=""/>
+	<VirtualOutCmd Title="Display-Timeout" Comment="0..300 s (0=nie)" CmdOnMethod="GET" CmdOffMethod="GET" CmdOn="/settimeout?v=&lt;v&gt;" CmdOnHTTP="" CmdOnPost="" CmdOff="" CmdOffHTTP="" CmdOffPost="" CmdAnswer="" Analog="true" Repeat="0" RepeatRate="0" HintText=""/>
+	<VirtualOutCmd Title="Wechselzeit" Comment="0..60 s (0=aus)" CmdOnMethod="GET" CmdOffMethod="GET" CmdOn="/setscroll?v=&lt;v&gt;" CmdOnHTTP="" CmdOnPost="" CmdOff="" CmdOffHTTP="" CmdOffPost="" CmdAnswer="" Analog="true" Repeat="0" RepeatRate="0" HintText=""/>
+	<VirtualOutCmd Title="Display an/aus" Comment="Digital: Ein=1 / Aus=0" CmdOnMethod="GET" CmdOffMethod="GET" CmdOn="/display?on=1" CmdOnHTTP="" CmdOnPost="" CmdOff="/display?on=0" CmdOffHTTP="" CmdOffPost="" CmdAnswer="" Analog="false" Repeat="0" RepeatRate="0" HintText=""/>
+</VirtualOut>

@@ -15,7 +15,22 @@ in einer eingebauten **Web-Oberfläche** und direkt in **Home Assistant** an.
 
 ---
 
+## Loxone
+
+PowerDot Air lässt sich in Loxone einbinden – Luftwerte per UDP an den Miniserver **und** Display/Audio aus Loxone steuern (Helligkeit, Lautstärke, Timeout, Wechselzeit, Display an/aus). Fertige Vorlagen zum Import und eine Schritt-für-Schritt-Anleitung liegen im Ordner **[`loxone/`](loxone/)** → [Anleitung](loxone/LOXONE.md).
+
+---
+
 ## Versionen / Changelog
+
+### v1.8.0-beta — 29.07.2026
+**Neu**
+- **Loxone-Anbindung (beide Richtungen).** Alle Luftwerte per UDP an einen Loxone Miniserver; Display + Audio (Helligkeit, Lautstärke, Display-Timeout, Wechselzeit, Display an/aus) aus Loxone per HTTP steuerbar. Fertige Vorlagen + Anleitung: [`loxone/LOXONE.md`](loxone/LOXONE.md).
+- **Erweiterte Ansicht:** überarbeitete Zeitachse – runde Zeitpunkte bei jeder Zeitspanne, kein Fehler mehr ab der 24-Stunden-Anzeige, Datum an Tageswechseln hervorgehoben.
+
+**Geändert / Verbessert**
+- Stabilität & Sicherheit: Plausibilitätsgrenzen für Temperatur/Feuchte, Töne und Alarm laufen im Hintergrund (kein Ruckeln), kleinere Härtungen der Web-Oberfläche.
+- Auf das gemeinsame **PowerDotCore v0.21.0** aktualisiert.
 
 ### v1.7.0-beta — 24.07.2026
 **Neu**
