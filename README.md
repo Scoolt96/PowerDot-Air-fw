@@ -23,6 +23,14 @@ PowerDot Air lässt sich in Loxone einbinden – Luftwerte per UDP an den Minise
 
 ## Versionen / Changelog
 
+### v1.9.0-beta - 2026-08-04
+
+- Neu: Sprachumschaltung Deutsch/Englisch. In der Web-UI unter dem Reiter "Gerät/Device" die Sprache waehlen (nach Bestaetigung startet das Geraet kurz neu). Display UND die gesamte Web-Oberflaeche werden umgeschaltet.
+- Neu: QR-Code im WLAN-Setup-Screen. Handy scannt den Code und verbindet sich automatisch mit dem Hotspot "PowerDot Air" — kein manuelles WLAN-Tippen mehr.
+- Fluessigere Seitenwechsel im Hochformat: Trend-Charts werden waehrend des Slides kurz ausgeblendet.
+- Bewusst noch deutsch: die Diagramm-Metriknamen (dienen als Home-Assistant-Entity-IDs) und die Screen-Schema-Grafiken.
+
+
 ### v1.8.0-beta — 29.07.2026
 **Neu**
 - **Loxone-Anbindung (beide Richtungen).** Alle Luftwerte per UDP an einen Loxone Miniserver; Display + Audio (Helligkeit, Lautstärke, Display-Timeout, Wechselzeit, Display an/aus) aus Loxone per HTTP steuerbar. Fertige Vorlagen + Anleitung: [`loxone/LOXONE.md`](loxone/LOXONE.md).
